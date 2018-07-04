@@ -1,6 +1,6 @@
 # Giao hàng tiết kiệm Extension
 
-[Chrome Web Store](https://chrome.google.com/webstore/detail/dnccpnibbfhjbhjhhoodjbkkljodpckg/publish-accepted?hl=vi&gl=VN)
+[Chrome Web Store](https://chrome.google.com/webstore/detail/dnccpnibbfhjbhjhhoodjbkkljodpckg)
 
 Calculate shipment fee of giaohangtietkiem.com service (a local Vietnamese logistic service).
 
