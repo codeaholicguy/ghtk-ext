@@ -1,22 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
+import styled from 'styled-components'
+
+import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles'
+
+import LogoImage from '../../core/assets/images/logo.png'
+
+const theme = createMuiTheme()
+
+const Wrapper = styled.div`
+  padding: 10px;
+`
+const Logo = styled.img`
+  height: 50px;
+`
 
 const App = ({children}) => (
-  <div>
-    <h1>Rerepa</h1>
-    <div>
-      <Link to="/counter" href="/counter">
-        Counter
-      </Link>
-    </div>
-    <div>
-      <Link to="/nothing" href="/nothing">
-        Nothing here?
-      </Link>
-    </div>
-    <div>{children}</div>
-  </div>
+  <MuiThemeProvider theme={theme}>
+    <Wrapper>
+      <Logo src={LogoImage} alt="Giao hàng tiết kiệm" />
+      <div>{children}</div>
+    </Wrapper>
+  </MuiThemeProvider>
 )
 
 App.propTypes = {

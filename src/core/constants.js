@@ -1,8 +1,11 @@
 import {func, object, shape, string, number, bool} from 'prop-types'
 
 export const ActionTypes = {
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT'
+  GET_SHIPMENT_FEE_SUCCESS: 'GET_SHIPMENT_FEE_SUCCESS',
+  RESET_SHIPMENT_FEE: 'RESET_SHIPMENT_FEE',
+  SAVE_SETTING: 'SAVE_SETTING',
+  INIT_APP_SUCCESS: 'INIT_APP_SUCCESS',
+  INIT_APP_FAILED: 'INIT_APP_FAILED'
 }
 
 export const locationShape = shape({
